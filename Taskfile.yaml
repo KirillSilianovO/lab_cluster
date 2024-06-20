@@ -1,0 +1,12 @@
+---
+
+version: '3'
+
+includes:
+  vm: ./Taskfiles/Taskfile_{{ OS }}.yaml
+
+tasks:
+  create_vm:
+    desc: Create a VM
+    cmds:
+      - task: vm:create_vm

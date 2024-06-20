@@ -1,0 +1,9 @@
+---
+
+version: 3
+
+tasks:
+  create_vm:
+    desc: Create a VM
+    cmds:
+      - echo "Creating VM on Linux"
