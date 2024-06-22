@@ -4,6 +4,7 @@ version: '3'
 
 includes:
   vm: ./Taskfiles/Taskfile_{{ OS }}.yaml
+  #vms_config: ./vms_config.yaml
 
 tasks:
   create_vm:

@@ -2,8 +2,15 @@
 
 version: 3
 
+includes:
+  vms_config: ../vms_config.yaml
+
 tasks:
   create_vm:
     desc: Create a VM
     cmds:
-      - echo "Creating VM on Linux"
+      - |
+        vboxmanage createvm \
+          --name={{ .NODE_1_NAME }} \
+          --ostype="Ubuntu_64" \
+          --register

@@ -1,0 +1,6 @@
+---
+
+version: 3
+
+vars:
+  NODE_1_NAME: node1
